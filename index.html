@@ -6,152 +6,61 @@
 
 		<!--声明当前页面三要素-->
 		<title>网页标题</title>
-		<meta name="Keywords" content="关键字,关键字">
-		<meta name="Description" content="网页描述">
+		<meta name="Keywords" content="试玩大师,试玩,试玩客,苹果试玩,手机试玩">
+		<meta name="Description" content="苹果手机试玩">
 		<meta name="baidu-site-verification" content="jHC2HNDsiV" />
 
-		<!--css样式 层叠样式表 化妆品 衣服-->
+		<!--css样式-->
 		<style type="text/css">
-			*{
-				margin:0;
-				padding:0;
-			}
-			body{
-				background:white;
-			  }
-			#jsq{
-				width:400px; height:400px;
-				background-color:rgba(0,0,0,.5);
-				margin:100px auto 0px;
-				border:2px solid #fff;
-				box-shadow:0px 0px 10px #fff;
-			}
-			#jsq h3{
-				font-size:26px; color:#fff;
-				font-family:"微软雅黑"; text-shadow:0px 0px 20px #fff;
-				text-align:center;
-				line-height:65px;
-			}
-			#jsq .endTime{color:#fff; font-size:14px; padding-left:25px; }
-			#jsq .endTime input{
-				width:70px; height:30px;
-				border-radius:10px; margin:0px 5px; color:red;
-				text-align:center;
-			}
-			#jsq .begin{
-				width:100px; height:100px;
-				background:#fff; box-shadow:2px 2px 10px #ddd;
-				border-radius:50px; text-align:center;
-				line-height:100px; font-size:35px;
-				font-weight:bold;margin:30px auto;
-				cursor:pointer;
-			}
-			#jsq p{
-				color:#fff; font-size:24px;
-				text-align:center; line-height:45px;
-			}
-			#jsq p span{
-				color:red; font-weight:bold;
-				font-size:35px; padding:0px 10px;
-			}
-			.div{
-
-				/*位置属性*/
-				/*position: fixed;*/
-				/*	margin:;
-					padding:;*/
+			.top1{
+				height: 15%;
 				
-				/*盒子自身属性*/
-				/*width:400px;*/
-				height: 100px;
-				/*其他属性*/
+			}
+			.top2{
+				height: 30%;
 				
+			}
+			.line1{
+				height: 3px;
+				margin: 50px;
+				background-color: gray;
+				
+			}
+			.left1{
+				float: left;
+				width: 38%;
+				margin-left: 8%;
+				background-color: gray;
+				
+			}
+			.right1{
+				float: left;
+				width: 38%;
+				margin-left: 8%;
+				margin-right: 8%;
+				background-color: gray;
 			}
 		</style>
 		
 	</head>
 	<body>
-		
-		<div id="jsq">
-			<h3>开始倒计时</h3>
-			
-			
-
-			<!--结束时间开始-->
-			<div class="endTime">
-				<form>
-					请输入：<input type="text" value='2019' id="y"/>年
-							<input type="text" value='10' id="m"/>月
-							<input type="text" value='1' id="d"/>日
-				</form>
-			</div>
-			<!--结束时间结束-->
-
-			<!--开始按扭-->
-			<div id="B" class="begin" name='asda' onselectstart="return false" style="color: balck">开始</div>
-			<p>现在距离<span>除夕</span>时间，还剩：</p>
-			<p class="c_Date"><span id="D">0</span>天<span id="H">0</span>小时<span id="M">0</span>分<span id="S">0</span>秒</p>
+		<div class='top1' style="background-color:rgb(21, 25, 54)">
+			<h1  align="center" style="color:white">苹果试玩大全</h1>
 		</div>
-
-		<script type="text/javascript">
-			
-
-			B.onclick = function(){
-				setInterval(function(){
-					upDate();
-				},1000);
-			};
-			
-			function upDate(){
-				var year = y.value;
-				var month = m.value;
-				var Day = d.value;
-
-				console.log(year,month,Day)
-
-				var endDate = new Date();
-				var newDate = new Date();
-
-
-				// 设置结束时间
-				endDate.setFullYear(year);
-				endDate.setMonth(month-1);
-				endDate.setDate(Day);
-				endDate.setHours(0);
-				endDate.setMinutes(0);
-				endDate.setSeconds(0);
-				
-				// 获取时间差毫秒数， 用结束时间毫秒数 - 此时此刻的秒数
-				var s = ( endDate.getTime() - newDate.getTime() )/1000; //把毫秒转换秒数
-				if ( s <=0 )
-				{
-					alert( "请输入的时间有误！");
-				};
-				
-				var day =  Math.floor(s/86400);//获取天数
-				s = s%86400;
-				var hours = Math.floor( s/3600 );
-				s = s%3600;
-				var minutes = Math.floor( s/60 );
-				s = s%60;
-				var se = s;
-
-				D.innerText = len( day ,3 );
-				H.innerText = len( hours ,2 );
-				M.innerText = len( minutes ,2 );
-				S.innerText = len( se ,2 );
-
-
-				function len(t,n){
-					var str =""+t;
-					while ( str.length < n )
-					{
-						str="0"+str;
-					};
-					return str;
-				};
-				//alert(len(hours,2));
-			};
-		</script>
+		<div class='top2'style="background-color:white">
+			<h1  align="center" style="color:blue">手机直接点击进入/电脑扫二维码开始赚钱</h1>
+			<h3  align="center" style="color:red">注意：所有平台均不会泄露个人信息，新手请依次试玩，老手可多手机多平台同时试玩，收益更翻倍，请注意IP地址，千万不要自己多手机互相邀请/收徒，会封号。</h3>
+		</div>
+		<div align="center" class="line1"></div>
+		<div >
+				<h5  align="center" style="color:gray">新手必做的试玩平台</h5>
+				<h1  align="center" style="color:blue">新手必做</h1>
+		</div>
+		<div class="left1">
+			234
+		</div>
+		<div class="right1">
+			567
+		</div>
 	</body>
 </html>
