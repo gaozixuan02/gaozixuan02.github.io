@@ -7,7 +7,13 @@ window.onload = function(){
 		obj[i].style.width = aWidth + '%';
 	}
 }
-
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a13e77a327fa1f8c7a84a760ae0f9ed5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 //li鐐瑰嚮杩涘叆璇︽儏
 function locaUrl(obj){
 	window.location.href = obj.getAttribute('url');
