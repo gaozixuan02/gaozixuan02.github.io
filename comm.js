@@ -10,7 +10,7 @@ window.onload = function(){
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?a13e77a327fa1f8c7a84a760ae0f9ed5";
+  hm.src = "https://hm.baidu.com/hm.js?728a93c63d6cbcea6814a2289fcfc822";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
